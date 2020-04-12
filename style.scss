@@ -13,7 +13,8 @@ html, body{
 }
 
 @mixin container($container-width, $container-height, $container-margin, $container-padding) {
-	height: $container-height;
+	height: auto;
+	min-height: $container-height;
 	max-width: $container-width;
 	margin: $container-margin;
 	padding: $container-padding;
@@ -261,5 +262,54 @@ html, body{
 
 		&--our-works{
 		}
+	}
+}
+
+.our-services{
+	@include container(1200px, 289px, 0 auto, 0 15px);
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 101px;
+	margin-bottom: 109px;
+}
+
+.our-services-item{
+	flex: 1 1 25%;
+	margin: 0 0 65px;
+	padding: 0 30px;
+	max-height: 289px;
+
+	&:last-child{
+		margin-right: 0;
+	}
+
+	.our-services-item__circle{
+		width: 151px;
+		height: 151px;
+		border: 1px solid rgba(59, 67, 76, 0.3);
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	.our-services-item__title{
+		color: #3b434c;
+		display: block;
+		font-size: 16px;
+		font-weight: 600;
+		text-transform: uppercase;
+		text-align: center;
+		margin: 29px auto 0;
+	}
+
+	.our-services-item__paragraph{
+		font-size: 14px;
+		line-height: 1.86;
+		letter-spacing: 0;
+		max-width: 178px;
+		margin: 19px auto 0;
+		text-align: center;
 	}
 }
