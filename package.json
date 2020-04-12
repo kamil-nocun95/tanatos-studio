@@ -1,0 +1,28 @@
+{
+  "name": "tanatos-studio",
+  "version": "1.0.0",
+  "description": "Tanatos Studio - Portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamil-nocun95/tanatos-studio.git"
+  },
+  "author": "Kamil Nocun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamil-nocun95/tanatos-studio/issues"
+  },
+  "homepage": "https://github.com/kamil-nocun95/tanatos-studio#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
