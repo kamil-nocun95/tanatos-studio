@@ -6,9 +6,75 @@
 		<title>Tanatos Studio - Portofolio website</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
 		<link rel="stylesheet" href="style.css">
+		<script src="js/script.js"></script>
 	</head>
 
 	<body>
+		<header class="hero">
+			<nav class="navbar">
+				<a href="#" class="navbar-item">
+					<img class="navbar-item__logo" src="images/logo.png" alt="Tanatos Studio Logo">
+				</a>
+
+				<div class="navbar-button" id="navbar-button">
+					<span class="navbar-button__label">Menu</span>
+					<div class="hamburger-menu">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+
+				<div class="navbar-menu-wrapper" id="navbar-menu">
+					<nav class="navbar-menu">
+						<span class="navbar-menu-close" id="navbar-close-button"></span>
+
+						<a href="" class="navbar-menu__item">Home</a>
+						<a href="" class="navbar-menu__item navbar-menu__item--active">About us</a>
+						<a href="" class="navbar-menu__item">Services</a>
+						<a href="" class="navbar-menu__item">Our works</a>
+						<a href="" class="navbar-menu__item">Contact</a>
+
+						<hr class="navbar-menu__separator">
+
+						<section class="social-icon">
+							<a href="" class="social-icon__item">
+								<img src="images/facebook.png" alt="Facebook icon">
+							</a>
+							<a href="" class="social-icon__item">
+								<img src="images/twitter.png" alt="Twitter icon">
+							</a>
+							<a href="" class="social-icon__item">
+								<img src="images/google+.png" alt="Google+ icon">
+							</a>
+							<a href="" class="social-icon__item">
+								<img src="images/dribble.png" alt="Dribble icon">
+							</a>
+							<a href="" class="social-icon__item">
+								<img src="images/behance.png" alt="Behance icon">
+							</a>
+						</section>
+					</nav>
+				</div>
+			</nav>
+
+			<section class="hero-intro">
+				<h1 class="hero-intro__header">We design <span class="hero-intro__mark-text">things</span></h1>
+				<p class="hero-intro__paragraph">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+				</p>
+
+				<div class="hero-intro-button-wrapper">
+					<a href="" class="hero-intro-button hero-intro-button--hire-us">Hire us</a>
+					<a href="" class="hero-intro-button hero-intro-button--our-works">Our works</a>
+				</div>
+			</section>
+
+			<span class="scroll-down"></span>
+		</header>
 	</body>
 </html>
